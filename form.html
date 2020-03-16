@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+input[type=text], input[type=integer]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+.resetbtn {
+  width: auto;
+  padding: 10px 10px;
+  background-color: lightgreen;
+}
+.imgcontainer {
+  text-align: center;
+  margin: auto;
+}
+img.avatar {
+  width: auto;
+  border-radius: 10%;
+}
+.container {
+  padding: 16px;
+}
+.heading {
+  margin: auto;
+  background-color: orange;
+
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="heading">
+  <h2>MARCOS FORM</h2>
+</div>
+<form action="marcos.php" method="post">
+  <div class="imgcontainer">
+    <img src="iiitlogo.png" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="fname"><b>FIRST NAME</b></label>
+    <input type="text" placeholder="Enter firstname" name="fname" required>
+
+    <label for="lname"><b>LAST NAME</b></label>
+    <input type="text" placeholder="Enter Lastname" name="lname" required>
+
+    <label for="e-id"><b>E-MAIL ID</b></label>
+    <input type="email" size="35" placeholder="E-Mail ID" name="e-id" required><br>
+
+    <label for="mob"><b> MOBILE NO.</b></label>
+    <input type="number" placeholder="Mobile No." name="mob" required><br>
+
+    <label for="age"><b>AGE</b></label>
+    <input type="number" placeholder="Age" name="age" value="" required><br>
+
+    <label for="rno"><b>ROLL NO</b></label>
+    <input type="text" placeholder="UI no." name="rno" required><br>
+     <b>GENDER</b><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"><b>Male</b></label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"><b>Female</b></label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other"><b>Other</b></label>
+
+    <button type="submit">Login</button>
+  </div>
+  <div class="container" style="background-color:white">
+    <button type="button" name="cancelbtn">CANCEL</button>
+    <input type="reset" value="RESET" name="resetbtn" style="background-color:lightgreen">
+  </div>
+</form>
+</body>
+</html>
